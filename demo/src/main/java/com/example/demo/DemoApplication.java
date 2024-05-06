@@ -43,4 +43,14 @@ public class DemoApplication {
 			}
 		}
 	}
+
+	private static void MostrarTabla() {
+		int resultado;
+		int i;
+		for (i = 1; i < 11; i++) {
+			resultado = 3 * i;
+			System.out.println(resultado);
+		}
+	}
+
 }
