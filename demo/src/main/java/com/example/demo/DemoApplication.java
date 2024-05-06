@@ -30,6 +30,17 @@ public class DemoApplication {
 				break;
 		}
 	}
-	
 
+	private static void MostarTabla2al5() {
+		int resultado;
+		int i;
+		int tabla;
+		for (tabla = 2; tabla < 6; tabla++) {
+			System.out.println("Tabla del "+ tabla);
+			for (i = 1; i < 11; i++) {
+				resultado = tabla * i;
+				System.out.println(resultado);
+			}
+		}
+	}
 }
