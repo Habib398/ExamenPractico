@@ -3,6 +3,7 @@ package com.example.demo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 @SpringBootApplication
@@ -10,6 +11,11 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
+		String nombre;
+		System.out.println("Ingresa tu nombre: ");
+		Scanner str = new Scanner(System.in);
+		nombre = str.nextLine();
+
 		System.out.println("===Menu tablas de multiplicar===");
 		System.out.println("1.- Mostrar tabla");
 		System.out.println("2.- Mostrar tablas del 2 al 5");
@@ -21,9 +27,11 @@ public class DemoApplication {
 		switch (opcion){
 			case 1:
 				MostrarTabla();
+				System.out.println("Saludos " + nombre);
 				break;
 			case 2:
 				MostarTabla2al5();
+				System.out.println("Saludos " + nombre);
 				break;
 			default:
 				System.out.println("Bye bye");
